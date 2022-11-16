@@ -51,6 +51,7 @@ end
 group :development, :test do
   gem 'brakeman', '~> 5.2.3', require: false
   gem 'bullet', '~> 7.0.2'
+  gem 'dotenv-rails', '~> 2.7.6'
   gem 'factory_bot_rails', '~> 6.2.0'
   gem 'faker', '~> 2.21.0'
   gem 'rspec-rails', '~> 6.0.0'
