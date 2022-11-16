@@ -5,7 +5,7 @@ require 'database_cleaner/active_record'
 DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean
 
-parsed_cards = JSON.parse(File.read(Rails.root.join('db/card_data.json')))
+parsed_cards = JSON.parse(Rails.root.join('db/card_data.json').read)
 
 parsed_cards.each do |card|
   Card.create!(card)
