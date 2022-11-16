@@ -10,8 +10,28 @@ AllCops:
     - "db/schema.rb"
     - "lib/tasks/auto_annotate_models.rake"
 
+Layout/HashAlignment:
+  Exclude:
+  - "config/initializers/generators.rb"
+
+Layout/ArgumentAlignment:
+  Exclude:
+  - "config/initializers/generators.rb"
+
 Lint/RedundantCopDisableDirective:
   Enabled: false
 
+Metrics/MethodLength:
+  Exclude:
+  - "db/migrate/20221116171255_create_cards.rb"
+
 Style/Documentation:
   Enabled: false
+
+Style/GlobalStdStream:
+  Exclude:
+  - "config/environments/production.rb"
+
+Style/RedundantFetchBlock:
+  Exclude:
+  - "config/puma.rb"
