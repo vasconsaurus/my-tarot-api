@@ -1,7 +1,23 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# frozen_string_literal: true
+
+require 'database_cleaner/active_record'
+
+DatabaseCleaner.strategy = :truncation
+DatabaseCleaner.clean
+
+parsed_cards = JSON.parse(File.read(Rails.root.join('db/card_data.json')))
+
+parsed_cards.each do |card|
+  Card.create!(card)
+end
+
+  # Card.create!(
+  #   name_short: 'test',
+  #   name: 'test',
+  #   value: 'test',
+  #   value_int: 1,
+  #   meaning_up: 'test',
+  #   meaning_rev: 'test',
+  #   card_description: 'test',
+  #   type_of_card: 'test'
+  # )
