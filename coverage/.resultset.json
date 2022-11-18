@@ -1,6 +1,26 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/manu/Library/CloudStorage/OneDrive-Personal/Documents/estudos/exercicios/tarot-api/my-tarot-api/app/controllers/cards_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/manu/Library/CloudStorage/OneDrive-Personal/Documents/estudos/exercicios/tarot-api/my-tarot-api/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
       "/Users/manu/Library/CloudStorage/OneDrive-Personal/Documents/estudos/exercicios/tarot-api/my-tarot-api/app/models/card.rb": {
         "lines": [
           null,
@@ -42,30 +62,6 @@
         "branches": {
         }
       },
-      "/Users/manu/Library/CloudStorage/OneDrive-Personal/Documents/estudos/exercicios/tarot-api/my-tarot-api/app/controllers/application_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/manu/Library/CloudStorage/OneDrive-Personal/Documents/estudos/exercicios/tarot-api/my-tarot-api/app/controllers/cards_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/manu/Library/CloudStorage/OneDrive-Personal/Documents/estudos/exercicios/tarot-api/my-tarot-api/app/jobs/application_job.rb": {
         "lines": [
           null,
@@ -94,6 +90,6 @@
         }
       }
     },
-    "timestamp": 1668777620
+    "timestamp": 1668778219
   }
 }
