@@ -7,7 +7,7 @@ class CardsController < ApplicationController
   end
 
   def random
-    cards = Card.all.sample(4)
+    cards = Card.all.sample((params[:total].to_i))
     render json: cards
   end
 end
