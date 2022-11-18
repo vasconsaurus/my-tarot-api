@@ -5,4 +5,9 @@ class CardsController < ApplicationController
     cards = Card.all
     render json: cards
   end
+
+  def random
+    cards = Card.all.sample(4)
+    render json: cards
+  end
 end
