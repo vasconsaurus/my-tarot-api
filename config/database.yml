@@ -85,5 +85,3 @@ test:
 production:
   <<: *default
   database: my_tarot_api_production
-  username: my_tarot_api
-  password: <%= ENV["MY_TAROT_API_DATABASE_PASSWORD"] %>
