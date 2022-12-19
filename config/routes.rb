@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'pages#show'
   resources :cards, only: [:index]
+  get 'cards/random/:total', to: 'cards#random', as: 'random'
 end
