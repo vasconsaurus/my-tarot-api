@@ -2,6 +2,7 @@ databases:
   - name: my_tarot_api
     databaseName: my_tarot_api
     user: my_tarot_api
+    plan: free
 
 services:
   - type: web
