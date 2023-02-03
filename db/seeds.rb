@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'database_cleaner/active_record'
+# require 'database_cleaner/active_record'
 
-DatabaseCleaner.strategy = :truncation
-DatabaseCleaner.clean
+# DatabaseCleaner.strategy = :truncation
+# DatabaseCleaner.clean
 
 parsed_cards = JSON.parse(Rails.root.join('db/card_data.json').read)
 
